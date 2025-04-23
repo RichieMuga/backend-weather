@@ -1,0 +1,74 @@
+# Global
+node_modules/
+.DS_Store
+.env
+.env.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.local
+*.log
+
+# Laravel - backend/
+backend/vendor/
+backend/node_modules/
+backend/storage/*.key
+backend/storage/logs/
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/.env
+backend/.env.*
+backend/public/storage
+backend/homestead.yaml
+backend/Homestead.json
+backend/.phpunit.result.cache
+
+# Laravel IDE helper & telescope (if used)
+backend/_ide_helper.php
+backend/_ide_helper_models.php
+backend/.phpstorm.meta.php
+backend/storage/telescope/
+
+# Laravel Sail
+backend/docker-compose.override.yml
+
+# Laravel Vapor
+backend/.vapor/
+
+# Laravel Mix
+backend/public/mix-manifest.json
+
+# Next.js - frontend/
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+frontend/.env
+frontend/.env.*
+frontend/.turbo/
+frontend/coverage/
+
+# Vercel
+frontend/.vercel/
+
+# Log & debug files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/.eslintcache
+
+# Build artifacts (optional if statically exporting Next.js)
+frontend/build/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS-specific
+Thumbs.db
+ehthumbs.db
+
