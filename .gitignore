@@ -1,0 +1,48 @@
+# Root-level ignores (optional)
+.env
+.DS_Store
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Laravel (backend/)
+backend/vendor/
+backend/node_modules/
+backend/.env
+backend/.env.*
+backend/storage/*.key
+backend/storage/logs/
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/*.php
+
+# Laravel IDE helper & testing tools
+backend/_ide_helper.php
+backend/_ide_helper_models.php
+backend/phpunit.result.cache
+
+# Laravel Sail (if used)
+backend/docker-compose.override.yml
+
+# Laravel Horizon (if used)
+backend/horizon.log
+
+# Laravel Telescope (if used)
+backend/storage/telescope
+
+# Next.js (frontend/)
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/coverage/
+
+# OS-specific files
+**/.DS_Store
+**/Thumbs.db
+
