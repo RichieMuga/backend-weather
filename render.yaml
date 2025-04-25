@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: laravel-weather-api
+    runtime: php
+    buildCommand: "chmod +x render-build.sh && ./render-build.sh"
+    startCommand: "php artisan serve --host=0.0.0.0 --port=10000"
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        generateValue: true
+      - key: OPENWEATHER_API_KEY
+        sync: false  # This marks it as a secret
+      - key: OPENWEATHER_API_URL
+        value: https://api.openweathermap.org/data/2.5
+      - key: OPENWEATHER_GEO_URL
+        value: https://api.openweathermap.org/geo/1.0
